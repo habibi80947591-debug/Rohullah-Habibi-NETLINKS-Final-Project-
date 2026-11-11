@@ -1,0 +1,1 @@
+import{motion}from"motion/react";export default function SectionHeading({eyebrow,title,description,action}){return <motion.div className="section-heading" initial={{opacity:0,y:16}} whileInView={{opacity:1,y:0}} viewport={{once:true}}><div><span className="eyebrow">{eyebrow}</span><h2>{title}</h2>{description&&<p>{description}</p>}</div>{action}</motion.div>}
